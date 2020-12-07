@@ -15,6 +15,9 @@ public class SingleResponse {
 
 /**
  * 交通工具类
+ * 方式1
+ * 1。 违反了单一职责原则
+ * 2。 解决方案，根据交通工具运行方式不通，分成不同的类，改进 SingleReponse2
  */
 class Vehicle {
     public void run(String vehicle) {
