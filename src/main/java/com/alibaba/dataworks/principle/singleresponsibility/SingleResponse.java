@@ -13,7 +13,9 @@ public class SingleResponse {
     }
 }
 
-// 交通工具类
+/**
+ * 交通工具类
+ */
 class Vehicle {
     public void run(String vehicle) {
         System.out.println(String.format("%s is walking on the road", vehicle));
