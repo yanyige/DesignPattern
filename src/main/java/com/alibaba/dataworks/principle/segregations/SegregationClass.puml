@@ -1,0 +1,18 @@
+@startuml
+
+'dddddd
+
+interface Interface1 {
+  +operation1()
+	+operation2()
+	+operation3()
+	+operation4()
+	+operation5()
+}
+
+Interface1 <|-left- A
+Interface1 <|-right- B
+Interface1 <|-- C
+Interface1 <|-- D
+
+@enduml
