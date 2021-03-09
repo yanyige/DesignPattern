@@ -1,0 +1,19 @@
+@startuml
+
+class "披萨 \n pizza" as pizza {
+    + prepare();
+    + bake();
+    + cut();
+    + box();
+}
+
+class chessPizza {
+}
+
+class greekPizza {
+}
+
+pizza <|-- chessPizza
+pizza <|-- greekPizza
+
+@enduml
