@@ -13,7 +13,19 @@ class chessPizza {
 class greekPizza {
 }
 
+class orderPizza {
+}
+
+class orderfactory{
+}
+
 pizza <|-- chessPizza
 pizza <|-- greekPizza
+
+orderPizza --> pizza
+orderPizza --> greekPizza
+orderPizza --> chessPizza
+
+orderfactory --> orderPizza
 
 @enduml

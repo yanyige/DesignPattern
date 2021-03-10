@@ -1,4 +1,4 @@
-package com.alibaba.dataworks.design.factory.sinplefactory;
+package com.alibaba.dataworks.design.factory.sinplefactory.pizzastore.pizza;
 
 /**
  * @author yige.yyg (奕格)

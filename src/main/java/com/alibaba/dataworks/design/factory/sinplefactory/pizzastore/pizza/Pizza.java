@@ -1,4 +1,4 @@
-package com.alibaba.dataworks.design.factory.sinplefactory;
+package com.alibaba.dataworks.design.factory.sinplefactory.pizzastore.pizza;
 
 /**
  * @author yige.yyg (奕格)
@@ -11,15 +11,15 @@ public abstract class Pizza {
     public abstract void prepare();
 
     public void bake() {
-        System.out.println(name + "baking");
+        System.out.println(name + " baking");
     }
 
     public void cut() {
-        System.out.println(name + "cuting");
+        System.out.println(name + " cuting");
     }
 
     public void box() {
-        System.out.println(name + "boxing");
+        System.out.println(name + " boxing");
     }
 
     public void setName(String name) {
