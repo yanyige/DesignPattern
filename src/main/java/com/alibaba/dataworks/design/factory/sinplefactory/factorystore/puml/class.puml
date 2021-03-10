@@ -22,6 +22,9 @@ class orderPizza1 {
 class orderPizza2 {
 }
 
+class SimpleFactory {
+}
+
 pizza <|-- chessPizza
 pizza <|-- greekPizza
 
@@ -29,7 +32,8 @@ orderPizza --> pizza
 orderPizza --> greekPizza
 orderPizza --> chessPizza
 
-orderPizza1 --> pizza
-orderPizza2 --> pizza
+SimpleFactory <-- orderPizza
+SimpleFactory <-- orderPizza1
+SimpleFactory <-- orderPizza2
 
 @enduml
