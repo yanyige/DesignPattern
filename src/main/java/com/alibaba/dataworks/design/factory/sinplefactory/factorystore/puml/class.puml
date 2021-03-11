@@ -32,8 +32,8 @@ orderPizza --> pizza
 orderPizza --> greekPizza
 orderPizza --> chessPizza
 
-SimpleFactory <-- orderPizza
-SimpleFactory <-- orderPizza1
-SimpleFactory <-- orderPizza2
+SimpleFactory --o orderPizza
+SimpleFactory --o orderPizza1
+SimpleFactory --o orderPizza2
 
 @enduml
