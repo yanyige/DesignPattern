@@ -1,0 +1,50 @@
+@startuml
+
+class "披萨 \n pizza" as pizza {
+    + prepare();
+    + bake();
+    + cut();
+    + box();
+}
+
+
+class BJchessPizza {
+}
+
+class BJgreekPizza {
+}
+
+class LDchessPizza {
+}
+
+class LDgreekPizza {
+}
+
+interface absFactory {
+    + createPizza(): Pizza
+}
+
+class BJFactory {
+}
+
+class LDFactory {
+}
+
+BJchessPizza --|> pizza
+BJgreekPizza --|> pizza
+LDchessPizza --|> pizza
+LDgreekPizza --|> pizza
+
+BJFactory --> absFactory
+LDFactory --> absFactory
+
+BJFactory <-- BJchessPizza
+BJFactory <-- BJgreekPizza
+
+LDFactory <-- LDchessPizza
+LDFactory <-- LDgreekPizza
+
+absFactory --o OrderPizza
+
+
+@enduml
