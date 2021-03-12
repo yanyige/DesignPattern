@@ -1,0 +1,48 @@
+@startuml
+
+class "披萨 \n pizza" as pizza {
+    + prepare();
+    + bake();
+    + cut();
+    + box();
+}
+
+class SimpleOrderFactory {
+}
+
+class BJOrderPizza {}
+class LDOrderPizza {}
+
+class BJchessPizza {
+}
+
+class BJgreekPizza {
+}
+
+class LDchessPizza {
+}
+
+class LDgreekPizza {
+}
+
+
+BJchessPizza <-- BJOrderPizza
+BJgreekPizza <-- BJOrderPizza
+
+' Level 2
+SimpleOrderFactory <|-- BJOrderPizza
+SimpleOrderFactory <|-- LDOrderPizza
+
+' Level 3
+LDchessPizza <-- LDOrderPizza
+LDgreekPizza <-- LDOrderPizza
+
+' Level 1
+
+BJchessPizza --|> pizza
+BJgreekPizza --|> pizza
+LDchessPizza --|> pizza
+LDgreekPizza --|> pizza
+
+
+@enduml

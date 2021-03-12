@@ -14,6 +14,10 @@ public class OrderPizza {
 
     SimpleFactory simpleFactory;
 
+    public OrderPizza(SimpleFactory simpleFactory) {
+        setFactory(simpleFactory);
+    }
+
     public void setFactory(SimpleFactory simpleFactory) {
         String orderType = "";
 

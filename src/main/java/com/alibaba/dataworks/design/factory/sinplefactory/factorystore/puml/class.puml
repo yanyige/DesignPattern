@@ -28,9 +28,8 @@ class SimpleFactory {
 pizza <|-- chessPizza
 pizza <|-- greekPizza
 
-orderPizza --> pizza
-orderPizza --> greekPizza
-orderPizza --> chessPizza
+SimpleFactory --> pizza
+
 
 SimpleFactory --o orderPizza
 SimpleFactory --o orderPizza1
