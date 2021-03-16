@@ -1,0 +1,18 @@
+@startuml
+
+interface "原型 \n prototype" as prototype {
+    + clone()
+}
+
+class "concretePrototype" as concretePrototype1 {
+    + clone()
+}
+
+class "concretePrototype2" as concretePrototype2 {
++ clone()
+}
+
+concretePrototype1 --|> prototype
+concretePrototype2 --|> prototype
+
+@enduml

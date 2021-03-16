@@ -1,0 +1,13 @@
+@startuml
+
+class "羊 \n sheep" as sheep {
+    + name: String
+    + age: int
+}
+
+class "client" as client
+
+client --> sheep
+
+
+@enduml
