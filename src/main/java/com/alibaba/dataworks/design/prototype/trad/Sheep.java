@@ -10,6 +10,8 @@ public class Sheep {
     private int age;
     private String color;
 
+    private Sheep friend;
+
     public String getName() {
         return name;
     }

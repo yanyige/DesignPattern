@@ -4,13 +4,24 @@ package com.alibaba.dataworks.design.prototype.single;
  * @author yige.yyg (奕格)
  * @date 2021/3/16
  */
+
 public class Sheep implements Cloneable {
     private String name;
     private int age;
     private String color;
 
+    private Sheep friend;
+
     public String getName() {
         return name;
+    }
+
+    public Sheep getFriend() {
+        return friend;
+    }
+
+    public void setFriend(Sheep friend) {
+        this.friend = friend;
     }
 
     public void setName(String name) {
@@ -45,6 +56,7 @@ public class Sheep implements Cloneable {
             "name='" + name + '\'' +
             ", age=" + age +
             ", color='" + color + '\'' +
+            ", friend=" + friend +
             '}';
     }
 
