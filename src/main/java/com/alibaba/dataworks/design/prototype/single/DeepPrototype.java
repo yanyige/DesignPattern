@@ -36,7 +36,7 @@ public class DeepPrototype implements Serializable, Cloneable {
 
     /**
      * 深拷贝 方式二 通过对象实例化实现（推荐方式）
-     * @return
+     * @return Object
      */
     public Object deepClone() {
         // 创建流
