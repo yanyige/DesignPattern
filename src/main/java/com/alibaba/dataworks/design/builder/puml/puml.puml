@@ -1,0 +1,17 @@
+@startuml
+
+class "Abstract House" as house {
+    + buildBasic(): void
+    + buildWall(): void
+    + roofed(): void
+}
+
+class "CommonHouse" as CommonHouse {
+}
+
+class "HightBuilding" as HightBuilding {}
+
+house <|-- CommonHouse
+house <|-- HightBuilding
+
+@enduml
