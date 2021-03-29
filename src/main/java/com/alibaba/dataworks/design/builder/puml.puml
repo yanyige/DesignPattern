@@ -1,0 +1,27 @@
+@startuml
+
+class "Director" as director {
+    + builder: Builder
+    + construct(): void
+}
+
+class "Builder" as builder {
+    + buildPartA(): void
+    + buildPartB(): void
+    + buildPartC(): void
+    + getResult(): void
+}
+
+class "ConcreteBuilder" as concreteBuilder {
+    + buildPartA(): void
+    + buildPartB(): void
+    + buildPartC(): void
+    + getResult(): void
+}
+
+class "Product" as product {}
+
+director o--> builder
+builder *-- product
+concreteBuilder --|> builder
+@enduml
