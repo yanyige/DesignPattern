@@ -1,0 +1,18 @@
+@startuml
+
+class "Adaptee\n适配者" as adaptee {
+    + specificRequest(): void
+}
+
+class "Adapter\n适配器" as adapter {
+    + request(): void
+}
+
+class "Target" as target {
+    + request(): void
+}
+
+adaptee <|-- adapter
+target <|.. adapter
+
+@enduml
