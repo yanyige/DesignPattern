@@ -1,0 +1,23 @@
+@startuml
+
+class "Voltage 220V\n适配者" as adaptee {
+    + output220V(): void
+}
+
+class "Voltage Adapter\n适配器" as adapter {
+    + request(): void
+}
+
+class "Voltage 5V" as target {
+    + output5V(): void
+}
+
+class "Phone" as client {
+    + charging(): void
+}
+
+adaptee <|-- adapter
+target <|.. adapter
+client --> target
+
+@enduml
