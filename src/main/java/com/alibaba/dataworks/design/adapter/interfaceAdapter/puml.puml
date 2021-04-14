@@ -1,0 +1,18 @@
+@startuml
+
+interface "Interface\n接口" as interface {
+    + op1(): void
+    + op2(): void
+    + op3(): void
+    + op4(): void
+}
+
+Abstract "Adapter\n适配器" as adapter {
+    + op1(): void
+    + op3(): void
+}
+
+
+interface <|-- abstract
+
+@enduml

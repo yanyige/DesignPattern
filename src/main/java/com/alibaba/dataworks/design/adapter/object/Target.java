@@ -6,7 +6,7 @@ package com.alibaba.dataworks.design.adapter.object;
  * @author yige.yyg (奕格)
  * @date 2021/4/2
  */
-interface Target
+public interface Target
 {
-    public void request();
+    void request();
 }
