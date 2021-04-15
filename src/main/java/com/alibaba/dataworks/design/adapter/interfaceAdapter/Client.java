@@ -8,7 +8,7 @@ package com.alibaba.dataworks.design.adapter.interfaceAdapter;
 public class Client {
 
     public static void main(String[] args) {
-        InterfaceT interfaceT = new AbsAdapter() {
+        InterfaceT interfaceT = new AbstractAdapter() {
             @Override
             public void Foo1() {
                 System.out.println("foo1 build");

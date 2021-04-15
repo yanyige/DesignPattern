@@ -6,7 +6,7 @@ package com.alibaba.dataworks.design.adapter.interfaceAdapter;
  * @author yige.yyg (奕格)
  * @date 2021/4/14
  */
-public abstract class AbsAdapter implements InterfaceT{
+public abstract class AbstractAdapter implements InterfaceT{
 
     @Override
     public void Foo1() {
