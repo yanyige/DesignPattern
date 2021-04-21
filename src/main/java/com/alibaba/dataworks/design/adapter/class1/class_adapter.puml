@@ -5,7 +5,7 @@ class "Voltage 220V\n适配者" as adaptee {
 }
 
 class "Voltage Adapter\n适配器" as adapter {
-    + request(): void
+    + output5V(): void
 }
 
 class "Voltage 5V" as target {
