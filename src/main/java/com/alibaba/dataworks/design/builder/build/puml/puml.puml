@@ -1,0 +1,29 @@
+@startuml
+
+class "HouseDirector" as director {
+    - houseDirector = new HouseDirector()
+    + builder: Builder
+    + construct(): void
+}
+
+abstract class "HouseBuilder" as builder {
+    - house: House = new House()
+    + buildBasic(): void
+    + buildWalls(): void
+    + roofed(): void
+    + build(): void
+}
+
+class "HighBuilding" as concreteBuilder {
+}
+
+class "CommonBuilding" as concreteBuilder1 {
+}
+
+class "House\n产品" as product {}
+
+director o-- builder
+builder o-- product
+concreteBuilder --|> builder
+concreteBuilder1 --|> builder
+@enduml
