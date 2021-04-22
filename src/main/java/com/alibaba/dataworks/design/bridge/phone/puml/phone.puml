@@ -1,0 +1,33 @@
+@startuml
+
+
+class "vivo" as vivo {
+
+}
+
+class "Xiaomi" as xiaomi {
+
+}
+
+class "Brand" as brand {
+    + call(): void
+}
+
+class "FoldedPhone" as foldedPhone {
+}
+
+class "UprightPhone" as uprightPhone {
+}
+
+class "Phone" as phone {
+    + brand: Brand
+}
+
+phone o- brand
+vivo -|> brand
+xiaomi -|> brand
+
+foldedPhone -|> phone
+uprightPhone -|> phone
+
+@enduml
